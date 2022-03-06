@@ -27,16 +27,16 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        int rsl = sum(8);
-        System.out.println(rsl);
-        rsl = minus(3);
-        System.out.println(rsl);
+        int result = sum(8);
+        System.out.println(result);
+        result = minus(3);
+        System.out.println(result);
         Calculator calculator = new Calculator();
-        rsl = calculator.divide(3);
-        System.out.println(rsl);
-        rsl = calculator.multiply(2);
-        System.out.println(rsl);
-        rsl = calculator.sumAllOperation(5);
-        System.out.println(rsl);
+        result = calculator.divide(3);
+        System.out.println(result);
+        result = calculator.multiply(2);
+        System.out.println(result);
+        result = calculator.sumAllOperation(5);
+        System.out.println(result);
     }
 }
