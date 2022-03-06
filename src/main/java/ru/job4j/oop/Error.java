@@ -15,7 +15,7 @@ public class Error {
     }
 
     public void printInfo() {
-        System.out.println("Статус ошикби " + active);
+        System.out.println("Статус ошибки " + active);
         System.out.println("Приоритет " + status);
         System.out.println("Устранить за " + message);
     }
