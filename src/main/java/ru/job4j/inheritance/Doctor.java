@@ -8,13 +8,6 @@ public class Doctor extends Profession {
         this.patientsCount = patientsCount;
     }
 
-    public Doctor(int patientsCount) {
-        this.patientsCount = patientsCount;
-    }
-
-    public Doctor() {
-    }
-
     public void examinationPatients() {
         System.out.println("Checked " + patientsCount + " patients");
     }
