@@ -15,7 +15,7 @@ public class Matches {
             int matches = Integer.parseInt(input.nextLine());
             if (1 <= matches && matches <= 3 && matches <= count) {
                 turn = !turn;
-                count = count - matches;
+                count -= matches;
                 String endSpichka;
                 if (count > 4 || count == 0) {
                     endSpichka = " спичек.";
