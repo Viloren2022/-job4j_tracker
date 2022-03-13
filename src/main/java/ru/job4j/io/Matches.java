@@ -26,7 +26,7 @@ public class Matches {
                 }
                 System.out.println("На столе осталось " + (count) + endSpichka);
             } else {
-                System.out.println("Вы ввели некоректное значение. Попробуйте еще раз!");
+                System.out.println("Вы ввели некоректное значение. Попробуйте еще раз!!!");
             }
         }
         System.out.println("Игра завершена");
