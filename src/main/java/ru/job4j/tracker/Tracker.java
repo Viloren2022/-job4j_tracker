@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Tracker {
     private final Item[] items = new Item[100];
     private int ids = 1;
-    private static int size = 0;
+    private int size = 0;
 
     public Item add(Item item) {
         item.setId(ids++);
@@ -43,26 +43,20 @@ public class Tracker {
     }
 
     public Item[] findAll() {
-        Item[] rsl = new Item[size];
-        for (int index = 0; index < size; index++) {
-            Item name = items[index];
-            if (name != null) {
-                rsl[index] = name;
-            }
-        }
-        return Arrays.copyOf(rsl, size);
+        return Arrays.copyOf(items, size);
     }
 
     public Item[] findByName(String key) {
-        Item[] rsl2 = new Item[size];
+        Item[] rsl = new Item[size];
+        int count = 0;
         for (int index = 0; index < size; index++) {
             Item name = items[index];
-            if (name.getName() == key) {
-                rsl2[index] = name;
-                size--;
+            if (Objects.equals(name.getName(), key)) {
+                rsl[index] = name;
+                count++;
             }
         }
-        return Arrays.copyOf(rsl2, size);
+        return Arrays.copyOf(rsl, count);
     }
 
     public static void main(String[] args) {
