@@ -57,11 +57,15 @@ public class Tracker {
         return Arrays.copyOf(rsl, count);
     }
 
-    public static void main(String[] args) {
-        Tracker tracker = new Tracker();
-        Item bug = new Item("Bag");
-        tracker.add(bug);
-        int id = bug.getId();
-        System.out.println(tracker.replace(id, bug));
+    public boolean delete(int id) {
+        int index = indexOf(id);
+        if (index != -1) {
+            items[index] = null;
+            System.arraycopy(items, index + 1, items, index, size - index - 1);
+            items[size - 1] = null;
+            size--;
+            return true;
+        }
+        return false;
     }
 }
