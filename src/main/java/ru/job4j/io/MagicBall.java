@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class MagicBall {
     public static void main(String[] args) {
-        System.out.print("Я великий Оракул. Что ты хочешь узнать? ");
+        System.out.print("Я великий Оракул. Что ты хочешь узнать, кожанный мешок? ");
         Scanner input = new Scanner(System.in);
         input.nextLine();
         int answer = new Random().nextInt(3);
