@@ -5,7 +5,7 @@ public class StartUI {
         boolean run = true;
         while (run) {
             showMenu();
-            int select = input.askInt("Select");
+            int select = input.askInt(" Select");
             if (select == 0) {
                 System.out.println("=== Create a new Item ===");
                 String name = input.askStr("Enter name: ");
@@ -33,7 +33,7 @@ public class StartUI {
                     System.out.println("Ошибка замены заявки.");
                 }
             } else if (select == 3) {
-                System.out.println("=== Delete item ===");
+                System.out.println("==== Delete item ====");
                 int id = input.askInt("Enter id: ");
                 if (tracker.delete(id)) {
                     System.out.println("Заявка удалена успешно.");
