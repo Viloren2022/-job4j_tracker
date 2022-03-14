@@ -3,7 +3,7 @@ package ru.job4j.oop;
 public class Train implements Vehicle {
     @Override
     public void move() {
-        System.out.println("Выполняется междугородний рейс");
+        System.out.println(getClass().getSimpleName() + " Выполняется междугородний рейс");
     }
 
     @Override
