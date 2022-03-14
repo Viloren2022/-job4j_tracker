@@ -1,9 +1,9 @@
 package ru.job4j.tracker;
 
 public interface Transport {
-    String go();
+    void go();
 
-    int countPassenger(int passenger);
+    void countPassenger(int passenger);
 
     int fill(int fuel);
 

@@ -3,16 +3,14 @@ package ru.job4j.tracker;
 public class Bus implements Transport {
 
     @Override
-    public String go() {
-        System.out.println("Вжжжжх!");
-        return null;
+    public void go() {
+        boolean wheels = true;
     }
 
     @Override
-    public int countPassenger(int passenger) {
+    public void countPassenger(int passenger) {
         int count = 0;
         count += passenger;
-        return 0;
     }
 
     @Override
