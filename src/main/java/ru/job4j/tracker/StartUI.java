@@ -18,26 +18,25 @@ public class StartUI {
     }
 
     private void showMenu(UserAction[] actions) {
-        System.out.println("Menu:");
+        out.println("Menu:");
         for (int index = 0; index < actions.length; index++) {
-            System.out.println(index + ". " + actions[index].name());
+            out.println(index + ". " + actions[index].name());
         }
     }
 
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
-        Output stuboutput = new StubOutput();
         Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         UserAction[] actions = {
                 new CreateAction(output),
-                new FindAllAction(),
-                new ReplaceItemAction(),
-                new DeleteItemAction(),
-                new FindItembyIdAction(),
-                new FindByNameAction(),
-                new ExitAction()
+                new FindAllAction(output),
+                new ReplaceItemAction(output),
+                new DeleteItemAction(output),
+                new FindItembyIdAction(output),
+                new FindByNameAction(output),
+                new ExitAction(output)
         };
-        new StartUI(stuboutput).init(input, tracker, actions);
+        new StartUI(output).init(input, tracker, actions);
     }
 }
