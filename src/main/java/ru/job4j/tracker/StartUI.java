@@ -13,7 +13,7 @@ public class StartUI {
             this.showMenu(actions);
             int select = input.askInt("Select:  ");
             UserAction action = actions[select];
-            run = action.execute(input, tracker);
+            run = action.execute(out, input, tracker);
         }
     }
 
