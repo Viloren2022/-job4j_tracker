@@ -10,4 +10,10 @@ public class College {
         student.setStart(new Date());
         System.out.println(student.getName() + " : " + student.getGroup() + " : " + student.getStart());
     }
+
+    public static class ShopDrop {
+        public static Product[] delete(Product[] products, int index) {
+            return products;
+        }
+    }
 }
