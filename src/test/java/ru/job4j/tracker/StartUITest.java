@@ -166,7 +166,7 @@ public class StartUITest {
     }
 
     @Test
-    public void whenInvalidExit() {
+    public void WhenInvalidExit() {
         Output out = new StubOutput();
         Input in = new StubInput(
                 new String[] {"1", "0"}
