@@ -14,10 +14,8 @@ public class ConvertList2Array {
                 row++;
                 cell = 0;
             }
-            if (cell < cells) {
-                array[row][cell] = num;
-                cell++;
-            }
+            array[row][cell] = num;
+            cell++;
         }
         return array;
     }
