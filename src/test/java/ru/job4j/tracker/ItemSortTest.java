@@ -17,7 +17,7 @@ public class ItemSortTest {
     @Test
     public void comparableSort() {
         List<Item> items = Arrays.asList(
-                new Item(15, "Marat"),
+                new Item(15, "Marats"),
                 new Item(5, "Polina"),
                 new Item(8, "Artemii")
         );
@@ -25,7 +25,7 @@ public class ItemSortTest {
         List<Item> expected = Arrays.asList(
                 new Item(5, "Polina"),
                 new Item(8, "Artemii"),
-                new Item(15, "Marat")
+                new Item(15, "Marats")
         );
         assertThat(expected, is(items));
     }
