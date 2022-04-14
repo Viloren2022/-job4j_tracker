@@ -13,7 +13,6 @@ public class Item implements Comparable<Item> {
     public Item() {
     }
 
-
     public Item(String name) {
         this.name = name;
     }
