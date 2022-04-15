@@ -10,6 +10,5 @@ public class OrderConvert {
             map.put(order.getNumber(), order);
         }
         return map;
-
     }
 }
