@@ -26,6 +26,4 @@ public class OrderConvertTest {
         HashMap<String, Order> map = OrderConvert.process(orders);
         assertNotEquals(map.size(), orders.size());
     }
-
-
 }
