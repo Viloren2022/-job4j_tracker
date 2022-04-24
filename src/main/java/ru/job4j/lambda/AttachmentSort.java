@@ -19,7 +19,6 @@ public class AttachmentSort {
                 return Integer.compare(left.getSize(), right.getSize());
             }
         };
-
         attachments.sort(comparator);
         System.out.println(attachments);
         Comparator comparatorName =  new Comparator() {

@@ -24,5 +24,4 @@ public class Attachment {
                 + ", size=" + size
                 + '}';
     }
-
 }
