@@ -55,6 +55,7 @@ public class SchoolTest {
                 new Student(60, "Surname6"),
                 new Student(90, "Surname9")
         );
+
         School sc = new School();
         Predicate<Student> pr =s -> s.getScore() < 50;
         List<Student> rsl = sc.collect(students, pr);
