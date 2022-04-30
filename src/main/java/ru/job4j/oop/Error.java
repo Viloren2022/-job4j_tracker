@@ -1,7 +1,7 @@
 package ru.job4j.oop;
 
 public class Error {
-    private boolean active;
+    public boolean active;
     private int status;
     private String message;
 
@@ -27,6 +27,5 @@ public class Error {
         critikal.printInfo();
         Error priority = new Error();
         priority.printInfo();
-
     }
 }

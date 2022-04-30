@@ -12,7 +12,8 @@ public class JobDescByName implements Comparator<Job> {
     public static void main(String[] args) {
         List<Job> list = Arrays.asList(
                 new Job("Impl task", 0),
-                new Job("Fix bug", 1)
+                new Job("Fix bug", 1),
+                new Job("Aix bug", 3)
         );
         list.sort(new SortByNameJob());
         System.out.println(list);
